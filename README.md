@@ -6,6 +6,7 @@
 ## Equipe
 
 **Nome do time:** VISIONQUEST
+
 **Modelo escolhido:** 1
 
 | Nome | Usuário do GitHub |
