@@ -10,11 +10,11 @@
 
 | Nome | Usuário do GitHub |
 | --- | --- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+|Luiz Vinicius|Luizn07|
+|Erbeson Brito|Erbeson-Brito|
+|Bruno Santos|brusantosdev|
+|Adília Colares|  |
+|Thomas Samuel|areasthom  |
 
 ## Modelos
 
