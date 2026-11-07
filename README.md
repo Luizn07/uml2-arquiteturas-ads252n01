@@ -5,8 +5,8 @@
 
 ## Equipe
 
-**Nome do time:** ____________________  
-**Modelo escolhido:** ___ (1 a 5)
+**Nome do time:** VISIONQUEST 
+**Modelo escolhido:** 1
 
 | Nome | Usuário do GitHub |
 | --- | --- |
