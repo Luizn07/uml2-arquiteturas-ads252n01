@@ -16,6 +16,7 @@
 |Bruno Santos|brusantosdev|
 |Adília Colares|  |
 |Thomas Samuel|areasthom  |
+|Bruno Gomes|  |
 
 ## Modelos
 
