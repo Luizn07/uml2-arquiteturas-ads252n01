@@ -1,19 +1,19 @@
 # Requisitos
 
-## Requisitos funcionais
+## Requisitos Funcionais
 
 | ID | Requisito |
-| --- | --- |
-| RF01 | Permitir o cadastro de alunos de sistema. |
-| RF02 | Permitir o cadastro de disciplinas com limite de vagas. |
-| RF03 | Permitir matricular um aluno cadastrado em uma disciplina disponível. |
-| RF04 | Validar o limite de vagas na camada de Negócio e bloquear a matrícula caso a disciplina esteja lotada. |
-| RF05 | Registrar logs das operações realizadas durante a execução do sistema para documentação em LOGS.md. |
+| :--- | :--- |
+| RF01 | Permitir o cadastro e login de clientes, restaurantes e entregadores no sistema. |
+| RF02 | Permitir que restaurantes cadastrem e atualizem itens do cardápio e sua disponibilidade. |
+| RF03 | Permitir que o cliente monte o carrinho e realize um pedido pelo API Gateway. |
+| RF04 | Permitir que o restaurante aceite ou recuse o pedido e atualize o status de preparo. |
+| RF05 | Permitir atribuir entregador, atualizar o status da entrega e registrar logs em LOGS.md. |
 
-## Requisitos não funcionais
+## Requisitos Não Funcionais
 
 | ID | Requisito |
-| --- | --- |
-| RNF01 | Estruturar o sistema em três camadas (Apresentação, Negócio e Dados) com comunicação estrita entre elas. |
-| RNF02 | Persistir os dados da aplicação exclusivamente em arquivos no formato JSON. |
-| RNF03 | Executar e orquestrar os serviços em contêineres isolados via docker-compose.yml, garantindo portabilidade entre ambientes  . |
+| :--- | :--- |
+| RNF01 | Estruturar o sistema no Modelo 1 (Delivery de comida) com arquitetura de microssserviços e API Gateway. |
+| RNF02 | Responder às consultas e pedidos de forma rápida e disponível durante horários de pico. |
+| RNF03 | Executar e orquestrar os serviços em contêineres isolados via docker-compose.yml, mantendo rastreabilidade em logs. |
