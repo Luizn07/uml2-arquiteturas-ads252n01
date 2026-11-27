@@ -40,11 +40,11 @@ Os diagramas estão em `docs/arquitetura.png` e `docs/sequencia.png`, e os requi
 
 | Nome | Usuário do GitHub |
 | ---- | ----------------- |
-| Adília Colares | |
-| Bruno Gomes | |
+| Adília Colares | h20lia |
+| Bruno Gomes | ibrunosz |
 | Bruno Santos | brusantosdev |
 | Erbeson Brito | Erbeson-Brito |
-| Gabriel Magalhães | |
+| Gabriel Magalhães | gabrielmagalhaesg700-hub |
 | Luiz Vinicius | Luizn07 |
 
 ## Como rodar
