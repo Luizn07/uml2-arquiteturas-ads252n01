@@ -5,11 +5,10 @@ Contém os materiais e atividades sobre arquiteturas de software.
 
 ## Integrantes
 
-- Adilia 
+- Adilia Colares
 - Bruno Gomes
 - Bruno Santos
 - Erbeson Brito
 - Gabriel Magalhães
 - Luiz Vinicius
 - Thomas Areas
-- Adilia Colares
