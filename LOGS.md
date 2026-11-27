@@ -47,3 +47,46 @@ Gateway - Resposta retornada ao cliente. HTTP 201.
 - POST `/api/notificacoes` — Cria notificação.
 - GET `/api/notificacoes` — Lista notificações.
 - GET `/api/notificacoes/{id}` — Consulta notificação.
+
+  ## Arquitetura e Docker Compose
+
+O projeto utiliza uma arquitetura de microsserviços com API Gateway, permitindo a separação das responsabilidades entre os serviços.
+
+### Serviços e portas
+
+| Microsserviço | Porta |
+|---|---:|
+| Gateway | 8080 |
+| Restaurantes | 3001 |
+| Pedidos | 3002 |
+| Pagamentos | 3003 |
+| Entregas | 3004 |
+| Notificações | 3005 |
+
+### Comunicação e infraestrutura
+
+- O Docker Compose é utilizado para organizar os containers.
+- Os serviços utilizam a rede Docker `delivery-net`.
+- O Gateway encaminha requisições ao serviço de Pedidos.
+- Pedidos se comunica com Restaurantes para validar os pedidos.
+- Cada microsserviço possui sua própria responsabilidade dentro da arquitetura.
+
+### Comandos Docker
+
+Para construir e iniciar os serviços:
+
+```bash
+docker compose up --build
+```
+
+Para consultar os logs dos containers:
+
+```bash
+docker compose logs
+```
+
+Para encerrar os serviços:
+
+```bash
+docker compose down
+```
