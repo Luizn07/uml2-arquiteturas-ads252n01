@@ -7,15 +7,15 @@
 
 ## Integrantes
 
-| Nome | 
-| ---- |
-| Adilia Colares
-| Bruno Gomes 
-| Bruno Santos 
-| Erbeson Brito
-| Gabriel Magalhães
-| Luiz Vinicius
-| Thomas Areas
+| Nome | Usuário do GitHub |
+| ---- | ----------------- |
+| Adilia Colares |h20lia |
+| Bruno Gomes |ibrunosz |
+| Bruno Santos | brusantosdev |
+| Erbeson Brito | Erbeson-Brito |
+| Gabriel Magalhães |gabrielmagalhaesg700-hub |
+| Luiz Vinicius | Luizn07 |
+| Thomas Areas | areasthom |
 
 ## Sobre o projeto
 
