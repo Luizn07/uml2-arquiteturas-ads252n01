@@ -17,3 +17,11 @@
 | RNF01 | Estruturar o sistema no Modelo 1 (Delivery de comida) com arquitetura de microssserviços e API Gateway. |
 | RNF02 | Responder às consultas e pedidos de forma rápida e disponível durante horários de pico. |
 | RNF03 | Executar e orquestrar os serviços em contêineres isolados via docker-compose.yml, mantendo rastreabilidade em logs. |
+
+## Regras de Negócio
+
+| ID | Regra |
+| :--- | :--- |
+| RN01 | Bloquear novos pedidos quando o restaurante estiver fechado ou com item esgotado. |
+| RN02 | Seguir a ordem de status do pedido: CRIADO, ACEITO, EM_PREPARO, SAIU_PARA_ENTREGA e ENTREGUE. |
+| RN03 | Cancelar ou reter o pedido caso o pagamento seja recusado antes do preparo. |
