@@ -1,5 +1,13 @@
 # Requisitos
 
+## Modelo e Arquitetura
+
+| Campo | Descrição |
+| :--- | :--- |
+| Modelo | Modelo 1 — Delivery de comida |
+| Arquitetura | Microssserviços com API Gateway |
+| Atores | Cliente, Restaurante, Entregador e Administrador |
+
 ## Requisitos Funcionais
 
 | ID | Requisito |
