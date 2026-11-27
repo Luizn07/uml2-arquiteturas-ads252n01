@@ -17,4 +17,33 @@ Pedidos - Pedido criado com sucesso. ID: 1.
 Pedidos - Status: AGUARDANDO_PAGAMENTO.
 Gateway - Resposta retornada ao cliente. HTTP 201.
 ```
+## Microsserviços e suas rotas
 
+### Gateway
+- POST `/api/pedidos` — Encaminha a criação de pedidos.
+
+### Restaurantes
+- GET `/api/restaurantes` — Lista restaurantes.
+- GET `/api/restaurantes/{id}` — Consulta restaurante.
+- POST `/api/restaurantes/validar` — Valida pedidos e itens.
+
+### Pedidos
+- POST `/api/pedidos` — Cria pedido.
+- GET `/api/pedidos` — Lista pedidos.
+- GET `/api/pedidos/{id}` — Consulta pedido.
+
+### Pagamentos
+- POST `/api/pagamentos` — Processa pagamento.
+- GET `/api/pagamentos/{id}` — Consulta pagamento.
+
+### Entregas
+- POST `/api/entregas` — Cria entrega.
+- GET `/api/entregas` — Lista entregas.
+- GET `/api/entregas/{id}` — Consulta entrega.
+- PATCH `/api/entregas/{id}/status` — Atualiza status.
+- PATCH `/api/entregas/{id}/entregador` — Atribui entregador.
+
+### Notificações
+- POST `/api/notificacoes` — Cria notificação.
+- GET `/api/notificacoes` — Lista notificações.
+- GET `/api/notificacoes/{id}` — Consulta notificação.
