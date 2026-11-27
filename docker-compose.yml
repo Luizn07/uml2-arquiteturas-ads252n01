@@ -1,0 +1,41 @@
+name: delivery-comida
+
+services:
+  gateway:
+    build:
+      context: ./servicos/gateway
+    container_name: gateway
+    ports:
+      - "8080:8080"
+    environment:
+      PEDIDOS_URL: http://pedidos:3002
+    depends_on:
+      - pedidos
+    networks:
+      - delivery-net
+
+  restaurantes:
+    build:
+      context: ./servicos/restaurantes
+    container_name: restaurantes
+    ports:
+      - "3001:3001"
+    networks:
+      - delivery-net
+
+  pedidos:
+    build:
+      context: ./servicos/pedidos
+    container_name: pedidos
+    ports:
+      - "3002:3002"
+    environment:
+      RESTAURANTES_URL: http://restaurantes:3001
+    depends_on:
+      - restaurantes
+    networks:
+      - delivery-net
+
+networks:
+  delivery-net:
+    driver: bridge
