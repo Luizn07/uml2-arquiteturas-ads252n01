@@ -36,6 +36,33 @@ services:
     networks:
       - delivery-net
 
+  pagamentos:
+    build:
+      context: ./servicos/pagamentos
+    container_name: pagamentos
+    ports:
+      - "3003:3003"
+    networks:
+      - delivery-net
+
+  entregas:
+    build:
+      context: ./servicos/entregas
+    container_name: entregas
+    ports:
+      - "3004:3004"
+    networks:
+      - delivery-net
+
+  notificacoes:
+    build:
+      context: ./servicos/notificacoes
+    container_name: notificacoes
+    ports:
+      - "3005:3005"
+    networks:
+      - delivery-net
+
 networks:
   delivery-net:
     driver: bridge
